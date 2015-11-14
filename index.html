@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Redirecting</title>
+		<meta http-equiv="refresh" content="0; URL='http://www.iangrossberg.com'" />
+	</head>
+	<body>
+		Redirecting to <a href="http://www.iangrossberg.com">iangrossberg.com</a>
+		<script>
+			setInterval( function() {
+				var index = document.title.indexOf("...")
+				if (index !== -1) {
+					document.title = document.title.substring(0, index)
+				} else {
+					document.title = document.title + "."
+				}
+			}, 500)
+		</script>
+	</body>
+</html>
